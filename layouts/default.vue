@@ -1,9 +1,15 @@
 <template>
-  <div>
-    <Nuxt />
+  <div class="default-layout">
+    <Container>
+      <Header />
+      <Nuxt />
+    </Container>
   </div>
 </template>
 
 <style>
-@import '../assets/styles/reset.css';
+.default-layout {
+  height: 100vh;
+  max-height: 1080px;
+}
 </style>

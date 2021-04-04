@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap');
+
+:root {
+  --color: #202020;
+  --color-secondary: #047E96;
+  --bg: #FCFCFC;
+  --button: #202020;
+  --button-hover: #047E96;
+  --white: #FCFCFC;
+}
+
+.dark-mode {
+  --color: #FFFFFF;
+  --color-secondary: #047E96;
+  --bg: #202020;
+  --button: #047E96;
+  --button-hover: #FF9F0A;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  background-color: var(--bg);
+  color: var(--color);
+  transition: 0.3s;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}

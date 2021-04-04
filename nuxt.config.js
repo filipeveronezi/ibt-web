@@ -1,38 +1,47 @@
 export default {
-  // Target: https://go.nuxtjs.dev/config-target
-  target: 'static',
-  router: {
-    base: '/ibt-web/'
-  },
-
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Igreja Batista da Trindade',
     htmlAttrs: {
-      lang: 'pt-br'
+      lang: 'pt-BR'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: 'icon', href: '/favicon.svg' }]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: ['normalize.css/normalize.css', '@/assets/css/main.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
+  components: [{ path: '@/components', pathPrefix: false }],
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    // https://go.nuxtjs.dev/typescript
-    '@nuxt/typescript-build'
+    '@nuxt/typescript-build',
+    '@nuxtjs/color-mode',
+    '@nuxtjs/fontawesome'
   ],
+
+  fontawesome: {
+    component: 'fa',
+    icons: {
+      solid: [
+        'faAdjust',
+        'faCalendarAlt',
+        'faBible',
+        'faHeadphonesAlt',
+        'faChurch'
+      ],
+      brands: ['faInstagram', 'faFacebookSquare', 'faYoutubeSquare']
+    }
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [],

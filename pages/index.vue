@@ -1,43 +1,52 @@
 <template>
-  <div class="container">
-    <h1 class="title">Igreja Batista da Trindade</h1>
+  <div class="index">
+    <div class="left-side">
+      <h1 class="title">Igreja Batista da Trindade</h1>
+      <SocialMedias class="social-medias" />
+    </div>
+    <div class="right-side">
+      <QuickAccess />
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 
-export default Vue.extend({
-  layout: 'default',
-  data() {
-    return {
-      data: ''
-    }
-  }
-})
+export default Vue.extend({})
 </script>
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&family=Oxygen:wght@300;400;700&display=swap');
-
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  width: 100vw;
+<style scoped>
+.index {
+  width: 100%;
+  height: 80%;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
-  text-align: center;
-  flex-direction: column;
-  background: #17252a;
+  justify-content: center;
+}
+
+.left-side,
+.right-side {
+  width: 50%;
 }
 
 .title {
-  color: #fff;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  letter-spacing: 0.2rem;
   text-transform: uppercase;
-  cursor: default;
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 9px;
+  line-height: 90px;
+  width: 100%;
+  margin: 0;
+  transition: letter-spacing 0.3s;
+  transition-timing-function: ease;
+}
+
+.social-medias {
+  margin-top: 23px;
+  width: 200px;
+  height: 50px;
 }
 </style>
