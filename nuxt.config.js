@@ -52,5 +52,6 @@ export default {
   target: 'static',
   router: {
     base: '/ibt-web/'
-  }
+  },
+  ssr: false
 }
