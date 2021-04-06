@@ -3,8 +3,8 @@
     <NuxtLink to="/" class="logo">
       <Logo />
     </NuxtLink>
-    <NavigationBar class="navigation-bar" />
-    <LightOrDark class="light-or-dark" />
+    <NavigationBar id="navigation-bar" />
+    <LightOrDark id="light-or-dark" />
   </header>
 </template>
 
@@ -26,7 +26,7 @@ export default Vue.extend({})
   align-self: center;
 }
 
-.light-or-dark {
+#light-or-dark {
   align-self: center;
   justify-self: center;
 }
@@ -39,11 +39,11 @@ export default Vue.extend({})
     padding: 0 1rem;
   }
 
-  .navigation-bar {
+  #navigation-bar {
     display: none;
   }
 
-  .light-or-dark {
+  #light-or-dark {
     width: 10%;
   }
 }
