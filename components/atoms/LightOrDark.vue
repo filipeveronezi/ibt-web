@@ -32,5 +32,10 @@ export default Vue.extend({
   max-height: 24px;
   width: 2.2rem;
   height: 2.4rem;
+  transition: color 0.2s;
+}
+
+.icon:hover {
+  color: var(--color-secondary);
 }
 </style>

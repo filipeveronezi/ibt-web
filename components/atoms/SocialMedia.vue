@@ -41,6 +41,10 @@ a:hover {
   transform: scale(1.1);
 }
 
+a:hover > .icon {
+  color: var(--color-secondary);
+}
+
 a,
 .icon {
   width: 100%;
@@ -49,5 +53,6 @@ a,
 
 .icon {
   color: var(--color);
+  transition: color 0.3s;
 }
 </style>
