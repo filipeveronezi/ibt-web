@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --color: #202020;
   --color-secondary: #047E96;
@@ -7,6 +11,7 @@
   --button: #202020;
   --button-hover: #047E96;
   --white: #FCFCFC;
+  box-sizing: border-box;
 }
 
 .dark-mode {

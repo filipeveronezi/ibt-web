@@ -1,5 +1,6 @@
 <template>
   <nav class="nav-bar-container">
+    <div class="overlay"></div>
     <ul class="nav-bar-list">
       <NuxtLink to="/" :class="`nav-bar-item ${checkActive('/')}`"
         >Início</NuxtLink

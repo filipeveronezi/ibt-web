@@ -32,8 +32,19 @@ export default Vue.extend({})
 }
 
 @media (max-width: 1000px) {
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+
   .navigation-bar {
     display: none;
+  }
+
+  .light-or-dark {
+    width: 10%;
   }
 }
 </style>
