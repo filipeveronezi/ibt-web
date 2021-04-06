@@ -18,7 +18,13 @@
       <NuxtLink to="contato" :class="`nav-bar-item ${checkActive('/contato')}`"
         >Contato</NuxtLink
       >
-      <a class="blog">Blog</a>
+      <a
+        class="blog"
+        href="https://www.batistatrindade.org.br/blog"
+        target="_blank"
+        rel="noreferrer noopener"
+        >Blog</a
+      >
     </ul>
   </nav>
 </template>
