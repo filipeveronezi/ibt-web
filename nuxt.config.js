@@ -51,11 +51,11 @@ export default {
   modules: [],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {}
+  build: {},
 
-  // target: 'static',
-  // router: {
-  //   base: '/ibt-web/'
-  // },
-  // ssr: false
+  target: 'static',
+  router: {
+    base: '/ibt-web/'
+  },
+  ssr: false
 }
