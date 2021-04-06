@@ -1,6 +1,6 @@
 <template>
   <div class="social-media-container">
-    <a :href="url" target="_blank">
+    <a :href="url" target="_blank" rel="noreferrer noopener">
       <fa class="icon" :icon="icon" />
     </a>
   </div>
