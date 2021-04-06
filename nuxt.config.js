@@ -54,8 +54,8 @@ export default {
   build: {},
 
   target: 'static',
-  router: {
-    base: '/ibt-web/'
-  },
+  // router: {
+  //   base: '/ibt-web/'
+  // },
   ssr: false
 }
