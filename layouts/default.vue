@@ -9,6 +9,7 @@
 
 <style>
 .default-layout {
+  width: 100%;
   height: 100vh;
   max-height: 1080px;
 }

@@ -2,7 +2,9 @@
   <div class="index">
     <div class="left-side">
       <h1 class="title">Igreja Batista da Trindade</h1>
-      <SocialMedias class="social-medias" />
+      <div class="social-medias-box">
+        <SocialMedias class="social-medias" />
+      </div>
     </div>
     <div class="right-side">
       <QuickAccess />
@@ -44,9 +46,50 @@ export default Vue.extend({})
   transition-timing-function: ease;
 }
 
-.social-medias {
-  margin-top: 23px;
-  width: 200px;
+.social-medias-box {
+  width: 100%;
   height: 50px;
+  margin-top: 23px;
+}
+
+@media (max-width: 1000px) {
+  .index {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .left-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    height: 50%;
+  }
+
+  .right-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 30vh;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 2rem;
+    justify-self: flex-start;
+    line-height: 60px;
+  }
+}
+
+@media (max-height: 550px) {
+  .right-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 60vh;
+  }
 }
 </style>

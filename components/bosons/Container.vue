@@ -11,4 +11,10 @@
   width: 100%;
   height: 100%;
 }
+
+@media (max-width: 1000px) {
+  .container {
+    margin: 10px auto 0 auto;
+  }
+}
 </style>

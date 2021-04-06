@@ -71,6 +71,7 @@ export default Vue.extend({
 .quick-access-container {
   width: 100%;
   max-height: 300px;
+  max-width: 580px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -136,5 +137,46 @@ p {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .item-container img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .calendar {
+    left: 0;
+    top: 5px;
+  }
+
+  .sermons {
+    left: 67px;
+    bottom: 5px;
+  }
+
+  .podcasts {
+    left: 134px;
+    top: 5px;
+  }
+
+  .visit {
+    left: 201px;
+    bottom: 5px;
+  }
+
+  .calendar p,
+  .podcasts p {
+    margin-top: 4px;
+  }
+
+  .sermons p,
+  .visit p {
+    margin-bottom: 4px;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
 }
 </style>
