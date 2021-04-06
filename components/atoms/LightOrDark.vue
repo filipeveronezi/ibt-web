@@ -35,7 +35,7 @@ export default Vue.extend({
   transition: color 0.2s;
 }
 
-@media (max-width: 1000px) {
+@media (min-width: 1000px) {
   .icon:hover {
     color: var(--color-secondary);
   }
