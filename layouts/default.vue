@@ -2,7 +2,7 @@
   <div class="default-layout">
     <Container>
       <Header />
-      <Nuxt />
+      <Nuxt class="animate-up" />
     </Container>
   </div>
 </template>
